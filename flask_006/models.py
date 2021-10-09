@@ -2,9 +2,11 @@ from datetime import datetime
 
 from werkzeug.security import generate_password_hash, check_password_hash
 
+from flask_006 import config
 from flask_006.database import FlaskDataBase, Users
 
-db = FlaskDataBase()
+
+db = FlaskDataBase(config.DB_NAME, config.USER, config.PASSWORD)
 
 
 def create_obj(model, obj):

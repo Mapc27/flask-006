@@ -24,7 +24,7 @@ def db_decorator(func):
 
 
 class FlaskDataBase:
-    def __init__(self, db_name='flask_app', user='mapc', password='mapc'):
+    def __init__(self, db_name, user, password):
         self.db_name = db_name
         self.user = user
         self.password = password
