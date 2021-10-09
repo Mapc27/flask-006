@@ -7,5 +7,7 @@
 - `sudo -i -u postgres` - зайти в консоль postgres. При необходимости, авторизоваться
 - `psql`
 - `CREATE DATABASE flask_app;` - создание базы данных
-- `CREATE DATABASE flask_app` - создание базы данных
-- `python manage.py runserver` - запуск сервера для разработки
+- `\q;` - выход из psql
+- `psql -f [путь до репозитория]/flask-006/flask_006/db_schema.sql flask_app` - создание таблиц
+- `config.py` - измените файл конфигурации
+- `python3 flaskapp.py` - запуск сервера
