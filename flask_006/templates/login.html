@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block content %}
+<div class="content">
+	<form class="login-form" action="/login" method="POST">
+		<h5 class="form-title">Login</h5>
+
+		{% if login_error %}
+		<p class="error-message">Login or password is wrong</p>
+		{% endif %}
+
+		<div class="mb-3">
+			<label class="form-label">Email address</label>
+			<input
+				type="email"
+				class="form-control"
+				aria-describedby="emailHelp"
+				name="email"
+				value="{{ default_email }}"
+			/>
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Password</label>
+			<input
+				type="password"
+				class="form-control"
+				name="password"
+				value="{{ default_password }}"
+			/>
+		</div>
+		<div class="mb-3 form-check">
+			<input type="checkbox" class="form-check-input" name='remember'/>
+			<label class="form-check-label">Remember me</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Login</button>
+	</form>
+</div>
+
+{% endblock %}
