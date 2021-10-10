@@ -14,6 +14,6 @@
 - `psql -f [путь до репозитория]/flask-006/flask_006/db_schema.sql flask_app` - создание таблиц
 - `exit` - выход из консоли postgres
 - `cd flask_006/`
-- `subl config.py или pycharm-professional config.py` - измените файл конфигурации
+- `subl config.py` или `pycharm-professional config.py` - измените файл конфигурации
 - `poetry shell` - вход в виртуальное окружение
 - `python3 flaskapp.py` - запуск сервера
